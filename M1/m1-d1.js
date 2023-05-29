@@ -126,3 +126,78 @@ if(isMyConditionTrue) {
 } else {
     console.log("I'm falsy: ", isMyConditionTrue)
 }
+
+
+
+
+
+// --------------- OPERATORS -----------------------
+// JavaScript provides a wide range of operators that allow you to perform various operations on values, variables, and expressions. Here are some commonly used operators in JavaScript along with examples:
+
+// Arithmetic Operators:
+
+// Addition (+): Adds two values together.
+
+// let a = 5 + 3; // Result: 8
+// Subtraction (-): Subtracts one value from another.
+
+// let b = 10 - 4; // Result: 6
+// Multiplication (*): Multiplies two values.
+
+// let c = 2 * 6; // Result: 12
+// Division (/): Divides one value by another.
+
+// let d = 20 / 5; // Result: 4
+// Modulus (%): Returns the remainder of a division operation.
+
+// let e = 15 % 4; // Result: 3 (remainder of 15 divided by 4)
+// Assignment Operators:
+
+// Assignment (=): Assigns a value to a variable.
+
+// let x = 10;
+// Addition assignment (+=): Adds a value to a variable and assigns the result.
+
+// let y = 5;
+// y += 3; // Equivalent to: y = y + 3; (y becomes 8)
+// Subtraction assignment (-=): Subtracts a value from a variable and assigns the result.
+
+// let z = 7;
+// z -= 2; // Equivalent to: z = z - 2; (z becomes 5)
+// Comparison Operators:
+
+// Equal to (==): Checks if two values are equal, performing type coercion if necessary.
+
+// let a = 5;
+// let b = '5';
+// console.log(a == b); // Result: true
+// Strict equal to (===): Checks if two values are equal without performing type coercion.
+
+// let a = 5;
+// let b = '5';
+// console.log(a === b); // Result: false
+// Greater than (>), less than (<), greater than or equal to (>=), less than or equal to (<=): Compare values and return a Boolean result.
+
+// Logical Operators:
+
+// Logical AND (&&): Returns true if both operands are true.
+
+// let a = true;
+// let b = false;
+// console.log(a && b); // Result: false
+// Logical OR (||): Returns true if at least one of the operands is true.
+
+// let a = true;
+// let b = false;
+// console.log(a || b); // Result: true
+// Logical NOT (!): Returns the opposite boolean value of the operand.
+
+// let a = true;
+// console.log(!a); // Result: false
+// Ternary Operator:
+
+// Ternary operator (condition ? value1 : value2): Evaluates a condition and returns one of two values based on the result.
+
+// let age = 20;
+// let canVote = age >= 18 ? 'Yes' : 'No';
+// console.log(canVote); // Result: 'Yes'
