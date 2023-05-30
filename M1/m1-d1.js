@@ -127,6 +127,11 @@ if(isMyConditionTrue) {
     console.log("I'm falsy: ", isMyConditionTrue)
 }
 
+// string, number, boolean, object, undefined, null
+let name
+
+console.log(name) // undefined
+console.log(surname) // null
 
 
 
