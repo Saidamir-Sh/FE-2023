@@ -97,3 +97,18 @@ console.log(greenFruits)
 console.log(indexOfKiwi)
 
 
+console.log("\n------------- NESTED ARRAYS -------------")
+
+let nestedArray = [
+    [ 1, 2, 3, 4],
+    [ 2, 4, 6, 8],
+    [ 3, 6, 8, 10],
+    [ "Mouse", "Cat" ] // Different length, different data type: you can do that, but PLEASE DON'T
+]
+
+// [[], [], []]
+
+console.log(nestedArray)
+console.log("The third element of the second row is", nestedArray[1][2])
+
+
