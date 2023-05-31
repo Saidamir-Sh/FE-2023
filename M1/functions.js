@@ -164,3 +164,38 @@ function outerFunction() {
 outerFunction()
 
 
+/* EXTRA 7
+ Write a piece of code for increasing all the numerical values in a array by 1.
+*/
+
+let mixedArray = [1, 2, 3, 4, 5, true, false, 'string', 8]
+
+for(let i = 0; i <= mixedArray.length - 1; i++) {
+    if (typeof mixedArray[i] ==='number') {
+        mixedArray[i]++
+    }
+}
+console.log(mixedArray)
+
+/* EXTRA 1
+ Write a piece of code for reverting an array.
+ es:
+ [1, 3, 5] ==> [5, 3, 1]
+*/
+let originalArray = ['A','B','C'];
+let reversedArray = originalArray.reverse();
+console.log(originalArray);
+console.log(reversedArray);
+
+let array = [1, 2, 3, 4, 5];
+// [ 1,2,3,4,5 ] => Swap 0 and 4
+// [ 5,2,3,4,1 ] => Swap 1 and 3 -> i+i, lenght - i - 1
+// [ 5,4,3,2,1 ]
+for (let i = 0; i < array.length / 2; i++) {
+  let temp = array[i]; // Save variable for later
+  array[i] = array[array.length - i - 1]; // replace the last with the first, then the second with the...
+  array[array.length - i - 1] = temp;
+}
+
+
+
