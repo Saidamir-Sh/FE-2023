@@ -4,6 +4,23 @@ const userPassword = document.getElementById('password')
 const submitBtn = document.querySelector('.submit-btn')
 const showPassword = document.querySelector('.show-btn')
 
+// const primaryBtn = document.querySelectorAll('.primary-btn')
+const primaryBtn = document.getElementsByClassName('primary-btn')
+console.log(primaryBtn)
+Array.from(primaryBtn).forEach(element => {
+    element.addEventListener('click', function() {
+        console.log('I am clicked')
+    })
+});
+
+// array.forEach(item => function(item) {..do something})
+// let numArr =  [1, 2, 3, 4, 5]
+// numArr.forEach((num) => {
+//     console.log(num + 1)
+// })
+
+
+
 
 // show password when button is clicked
 let isShow = true;
