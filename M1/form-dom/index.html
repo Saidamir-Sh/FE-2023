@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <rel ></rel>
+    <title>Form DOM</title>
+</head>
+<body>
+    <form>
+        <div class="input-group">
+            <input id="email" name="email" type="email">
+            <label for="email">Enter your email: </label>
+        </div>
+        <div class="input-group">
+            <input id="username" name="username" type="text">
+            <label for="username">Enter your username: </label>
+        </div>
+        <div class="input-group">
+            <input id="password" name="password" type="password">
+            <label for="password">Enter your password: </label>
+            <button class="show-btn" type="button">Show Password</button>
+        </div>
+        
+        <button onclick="displayUserInfo(event)" class="submit-btn" type="submit">Submit Form</button>
+    </form>
+
+    <section class="user-information">
+        <h2>User login information</h2>
+        <p class="email"></p>
+        <p class='username'></p>
+        <p class="password"></p>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
