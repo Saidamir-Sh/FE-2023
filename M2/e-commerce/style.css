@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(44, 44, 44);
+}
+/* give width to each navigation container, logo, link, icons */
+.navigation-logo {
+    width: 10%;
+}
+.navigation-icons {
+    width: 10%;
+}
+.navigation-links {
+    width: 40%;
+}
+/* Navigation layout */
+.navigation {
+    width: 100%;
+    height: 10vh; 
+    /* view height - 100vh = 10% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+}
+
+.navigation-logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.navigation-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-links ul li {
+    list-style: none;
+}
+
+.navigation-links ul li a {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+.navigation-icons i {
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* --------------- HOME --------------- */
+#home {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(44, 44, 44, 1), rgba(255, 0, 0, 0.514));
+    /* background-color: rgb(44, 44, 44); */
+}
+
+.home-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+}
+
+.product-img img {
+    width: 400px;
+    height: 400px;
+}
+
+.product-info {
+    color: white;
+    line-height: 20px;
+}
+
+.product-info h1 {
+    font-size: 85px;
+}
+.product-info p {
+    font-size: 25px;
+}
+
+.info-buttons button {
+    padding: 10px 25px;
+    margin-right: 15px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+}
+.info-buttons button:nth-child(2) {
+    color: black;
+    background-color: white;
+}
+.info-buttons button:nth-child(1) {
+    transition: all 0.3s;
+}
+.info-buttons button:nth-child(1):hover {
+    color: black;
+    background-color: white;
+}
+
+/* RESPONSIVE WEB DESIGN - RWD */
+/* POSITIONS */
