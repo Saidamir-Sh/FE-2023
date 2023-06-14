@@ -1,0 +1,64 @@
+/* CSS Box Model */
+/* 
+Padding -> space around the element
+Border -> element's border
+Margin - > space outside of the element
+*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-model {
+    width: 50%;
+    padding: 20px;
+    margin: 0px;
+    margin-right: 20px;
+    border: 1px solid red;
+    /* flex-grow: 4; */
+    /* margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 15px; */
+}
+
+.second-box-model {
+    /* width: 50%; */
+    padding: 20px;
+    margin: 0px;
+    border: 1px solid green; 
+}
+
+.third-box-model {
+    padding: 20px;
+    margin: 0px;
+    border: 1px solid purple; 
+    order: 1;
+    /* flex-grow: 2; */
+}
+
+
+/* Layout */
+/* Flexbox, Grid Layout */
+
+/* Flexbox */
+section {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+}
+
+
+
+
+
