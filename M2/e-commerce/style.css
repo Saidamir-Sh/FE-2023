@@ -6,6 +6,8 @@ body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     background-color: rgb(44, 44, 44);
+    overflow-x: hidden;
+    /* background-color: white; */
 }
 /* give width to each navigation container, logo, link, icons */
 .navigation-logo {
@@ -52,6 +54,24 @@ body {
     color: white;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 20px;
+    display: none; 
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+}
+.line {
+   width: 100%; 
+   height: 4px;
+   background-color: white;
 }
 
 
@@ -110,4 +130,108 @@ body {
 }
 
 /* RESPONSIVE WEB DESIGN - RWD */
-/* POSITIONS */
+/* Breakpoints */
+
+@media only screen and (max-width: 600px)  {
+    .navigation-links {
+        position: absolute;
+        right: -700px;
+        top: 0;
+        width: 80%;
+        height: 110vh;
+        background-color: rgb(44, 38, 38);
+        transition: all ease-in-out .5s;
+    }
+    .menu-open {
+        right: 0;
+        transition: all ease-in-out .5s;
+    }    
+    .navigation-links ul {
+        width: 100%;
+        height: 70%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .navigation-links ul li a {
+        font-size: 19px;
+    }
+
+    .navigation-icons {
+        width: 35%;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    #home {
+        height: 100vh;
+    }
+    .product-info h1 {
+        font-size: 50px;
+    }
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-buttons button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .product-img img {
+        width: 300px;
+        height: 300px;
+    }
+    .product-info, .product-img {
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    
+    
+}
+
+/* ------------------- PRODUCT ---------------- */
+#product {
+    width: 100%;
+    height: 100vh;
+}
+
+.item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0px;
+    right: 100px;
+
+    border: 1px solid rgb(255, 170, 12);
+    position: relative;
+    top: 50px;
+}
+
+
+
+
+
+/* Positions */
+
+/* position: static;  */
+/* default */
+/* top: 20px */
+/* top, left, bottom, right, z-index properties have no effect on element*/
+/* this positioning is not effected by other positions such as relative and absolute, fixed */
+
+/* position: relative; */
+/* relative -> allows to position element relative to its normal position in document flow  */
+/* top, left, bottom, right, z-index properties have  effect on element*/
+/* this positioning is not effected by other positions such as relative and absolute, fixed */
+
+/* position: absolute; */
+/* absolute -> removes element from normal document flow */
+/* top, left, rigth, bottom, z-index */
+
+/* position: fixed; */
+/* top: 20px; right: px; */
+
